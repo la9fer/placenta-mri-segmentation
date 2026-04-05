@@ -1,0 +1,34 @@
+# Placenta Accreta Spectrum (PAS) Detection via Deep Learning
+
+![Python](https://img.shields.io/badge/Python-3.10-blue.svg)
+![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-EE4C2C.svg)
+![MONAI](https://img.shields.io/badge/MONAI-Medical%20Imaging-00A6B4.svg)
+
+## Project Overview
+Placenta Accreta Spectrum (PAS) is a severe pregnancy complication where the placenta attaches too deeply into the uterine wall. Early and accurate detection via MRI is critical for maternal safety. 
+
+This project implements a **High-Capacity Convolutional Neural Network (U-Net)** to automatically segment and identify the placenta in medical MRI scans. By automating this radiological process, the model assists in identifying the spatial boundaries of the placenta, demonstrating the application of Computer Vision in healthcare.
+
+## Dataset
+The model was trained on the publicly available **Placenta Accreta Spectrum Disorders (PASDs) MRI Dataset**.
+* **Source:** [Mendeley Data - PASDs](https://data.mendeley.com/datasets/284gwmf5bh/1)
+* **Format:** Ground truth radiological masks paired with grayscale MRI slices.
+
+## Architecture
+The core architecture is a custom, widened **U-Net** built using **PyTorch** and **MONAI**.
+* **Frameworks:** PyTorch, MONAI, Matplotlib, PIL
+* **Model Depth:** 5 layer deep Encoder/Decoder `(32, 64, 128, 256, 512 channels)`
+* **Processing Blocks:** 4 Residual Units per layer for complex tissue texture extraction.
+* **Loss Function:** Dice Loss (Optimized for spatial overlap over pixel wise accuracy)
+* **Optimizer:** Adam (`lr=1e-5`)
+
+## Methodology
+To ensure the model learns generalized anatomical features rather than memorizing the training data, several enterprise-grade techniques were implemented:
+1. **Dynamic Data Augmentation:** Applied random horizontal/vertical flips and ±15° rotations on the fly during training to create an infinitely variable dataset.
+2. **Train/Validation Split:** The dataset was strictly split into an 80% Training set and a 20% unseen Validation Vault to actively monitor for and prevent overfitting.
+3. **Regularization:** A 20% Dropout rate was applied across the network to force redundant feature learning.
+
+## Results & Visualization
+The model successfully converges, capable of ignoring surrounding complex anatomy (fetus, amniotic fluid, bladder) to perfectly hug the sweeping curve of the uterine wall.
+
+*Developed by Lakshya Arora for Deep Learning & Medical Imaging research.*
