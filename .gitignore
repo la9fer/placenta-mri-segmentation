@@ -1,0 +1,11 @@
+# Ignore all AI Brain files
+*.pth
+
+# Ignore datasets and images
+pas_dataset/
+*.jpg
+*.png
+*.zip
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
