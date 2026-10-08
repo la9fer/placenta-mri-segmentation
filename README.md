@@ -28,7 +28,12 @@ To ensure the model learns generalized anatomical features rather than memorizin
 2. **Train/Validation Split:** The dataset was strictly split into an 80% Training set and a 20% unseen Validation Vault to actively monitor for and prevent overfitting.
 3. **Regularization:** A 20% Dropout rate was applied across the network to force redundant feature learning.
 
-## Results & Visualization
-The model successfully converges, capable of ignoring surrounding complex anatomy (fetus, amniotic fluid, bladder) to perfectly hug the sweeping curve of the uterine wall.
+## Results
+
+| Method | Dice Similarity Coefficient (DSC) | Intersection over Union (IoU) |
+| :--- | :---: | :---: |
+| **Otsu Baseline (Per-Sequence)** | 0.000 | 0.000 |
+| **Proposed Method (Per-Sequence)** | **0.860** | **0.770** |
+
 
 *Developed by Lakshya Arora for Deep Learning & Medical Imaging research.*
