@@ -31,7 +31,7 @@ To ensure the model learns generalized anatomical features rather than memorizin
 ## Results
 | Method | Dice Similarity Coefficient (DSC) | Intersection over Union (IoU) |
 | :--- | :---: | :---: |
-| **Otsu Baseline (Per-Sequence)** | 0.000 | 0.000 |
+| **Otsu Baseline (Per-Sequence)** | 0.329 | --- |
 | **Proposed Method (Per-Sequence)** | **0.860** | **0.770** |
 
 ## Limitations
