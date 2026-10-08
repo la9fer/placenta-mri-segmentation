@@ -27,6 +27,13 @@ To ensure the model learns generalized anatomical features rather than memorizin
 2. **Train/Validation Split:** The dataset was strictly split into an 80% Training set and a 20% unseen Validation Vault to actively monitor for and prevent overfitting.
 3. **Regularization:** A 20% Dropout rate was applied across the network to force redundant feature learning.
 
+## Overlay Images
+
+<img width="512" height="256" alt="best_sub082_31" src="https://github.com/user-attachments/assets/60c1ae36-11e2-4ea6-94f6-9bc95d81ad7e" />
+<img width="512" height="256" alt="best_sub082_35" src="https://github.com/user-attachments/assets/cbea8671-c185-4ded-ab94-f6bdfd2cc150" />
+<img width="512" height="256" alt="best_sub089_24" src="https://github.com/user-attachments/assets/44093c2a-3f49-49f8-8f6c-dcea42dd0090" />
+
+
 ## Results
 | Method | Dice Similarity Coefficient (DSC) | Intersection over Union (IoU) |
 | :--- | :---: | :---: |
