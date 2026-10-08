@@ -1,4 +1,4 @@
-# Placenta Accreta Spectrum (PAS) Detection via Deep Learning
+# Placenta MRI Segmentation (U-Net)
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-EE4C2C.svg)
