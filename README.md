@@ -2,7 +2,6 @@
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-EE4C2C.svg)
-![MONAI](https://img.shields.io/badge/MONAI-Medical%20Imaging-00A6B4.svg)
 
 ## Project Overview
 Placenta Accreta Spectrum (PAS) is a severe pregnancy complication where the placenta attaches too deeply into the uterine wall. Early and accurate detection via MRI is critical for maternal safety. 
