@@ -29,11 +29,14 @@ To ensure the model learns generalized anatomical features rather than memorizin
 3. **Regularization:** A 20% Dropout rate was applied across the network to force redundant feature learning.
 
 ## Results
-
 | Method | Dice Similarity Coefficient (DSC) | Intersection over Union (IoU) |
 | :--- | :---: | :---: |
 | **Otsu Baseline (Per-Sequence)** | 0.000 | 0.000 |
 | **Proposed Method (Per-Sequence)** | **0.860** | **0.770** |
+
+## Limitations
+Single run and seed, small model (482k parameters), 52.3% connected-component agreement, no external validation.
+
 
 
 *Developed by Lakshya Arora for Deep Learning & Medical Imaging research.*
