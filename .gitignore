@@ -9,3 +9,5 @@ pas_dataset/
 
 # Ignore Jupyter checkpoints
 .ipynb_checkpoints/
+
+git rm --cached .DS_Store
